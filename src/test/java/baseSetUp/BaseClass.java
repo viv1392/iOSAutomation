@@ -11,9 +11,10 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.options.XCUITestOptions;
 
 public class BaseClass {
-	@Test
 	
-	public void setUp() throws MalformedURLException {
+	 public IOSDriver driver;
+	
+	public IOSDriver setUp() throws MalformedURLException {
 		XCUITestOptions options=new XCUITestOptions();
 		options.setDeviceName("iPhone 15 pro");
 		options.setUdid("19892155-DA94-4064-8C94-EA26678375AE");
@@ -22,13 +23,11 @@ public class BaseClass {
 		options.setPlatformName("IOS");
 		options.setPlatformVersion("17.5");
 		options.setWdaLaunchTimeout(Duration.ofSeconds(20));
-		
 		URL url =new URL("http://127.0.0.1:4723/");
-		IOSDriver driver=new IOSDriver(url,options);
-		driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Search']")).click();
-		driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Default']")).click();
-		driver.findElement(By.xpath("//XCUIElementTypeSearchField")).sendKeys("Vivek");
-		driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Cancel']")).click();
+		driver=new IOSDriver(url,options);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		return driver;
+		
 	}
 
 }

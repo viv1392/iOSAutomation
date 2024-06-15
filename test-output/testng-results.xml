@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-12T15:43:16 IST" name="Default suite" finished-at="2024-06-12T15:43:23 IST" duration-ms="6716">
+  <suite started-at="2024-06-15T11:38:05 IST" name="Default suite" finished-at="2024-06-15T11:38:09 IST" duration-ms="4588">
     <groups>
     </groups>
-    <test started-at="2024-06-12T15:43:16 IST" name="Default test" finished-at="2024-06-12T15:43:23 IST" duration-ms="6716">
-      <class name="baseSetUp.BaseClass">
-        <test-method signature="setUp()[pri:0, instance:baseSetUp.BaseClass@31c88ec8]" started-at="2024-06-12T15:43:16 IST" name="setUp" finished-at="2024-06-12T15:43:23 IST" duration-ms="6697" status="PASS">
+    <test started-at="2024-06-15T11:38:05 IST" name="Default test" finished-at="2024-06-15T11:38:09 IST" duration-ms="4588">
+      <class name="testCases.DemoTest">
+        <test-method signature="testDropDown()[pri:0, instance:testCases.DemoTest@4f6ee6e4]" started-at="2024-06-15T11:38:05 IST" name="testDropDown" finished-at="2024-06-15T11:38:09 IST" duration-ms="4571" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-      </class> <!-- baseSetUp.BaseClass -->
+        </test-method> <!-- testDropDown -->
+      </class> <!-- testCases.DemoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
