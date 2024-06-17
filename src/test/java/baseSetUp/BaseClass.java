@@ -18,7 +18,7 @@ public class BaseClass {
 		XCUITestOptions options=new XCUITestOptions();
 		options.setDeviceName("iPhone 15 pro");
 		options.setUdid("19892155-DA94-4064-8C94-EA26678375AE");
-		options.setApp("/Users/hispl/Desktop/UIKitCatalog.app");
+		options.setApp("/Users/hispl/eclipse-workspace/iOSAutomation/resources/UIKitCatalog.app");
 		options.setAutomationName("XCUITest");
 		options.setPlatformName("IOS");
 		options.setPlatformVersion("17.5");

@@ -62,4 +62,11 @@ public class DemoTest extends BaseClass{
 		driver.findElement(AppiumBy.accessibilityId("Green color component value")).sendKeys("245");
 		driver.findElement(AppiumBy.accessibilityId("Blue color component value")).sendKeys("140");
 	}
+	@Test
+	public void  testSlider() throws MalformedURLException, InterruptedException {
+		driver=setUp();
+		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeStaticText[`name == 'Sliders'`]")).click();
+		WebElement ele=driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeSlider[`value == '42%'`]"));
+		ele.sendKeys("0.75%");
+	}
   }
